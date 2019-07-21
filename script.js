@@ -5,13 +5,10 @@
 
 var divArr = document.getElementsByTagName("div"); 
 console.log(divArr);
-var countEven = 1, countOdd = 1;
 for(var i = 0; i < divArr.length; i++){
-  if (i%2){
-    divArr[i].innerText = "Я четный элемент №" + countEven;
-    countEven++;
+  if (i%2) {
+    divArr[i].innerText = "Я четный элемент №" + Math.round(i/2);
   } else {
-    divArr[i].innerText = "Я нечетный элемент №" + countOdd;
-    countOdd++;
+  	divArr[i].innerText = "Я нечетный элемент №" + (Math.round(i/2) + 1);
   }
 }
