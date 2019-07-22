@@ -7,8 +7,8 @@ var divArr = document.getElementsByTagName("div");
 console.log(divArr);
 for(var i = 0; i < divArr.length; i++){
   if (i%2) {
-    divArr[i].innerText = "Я четный элемент №" + Math.round(i/2);
+    divArr[i].innerText = "Я четный элемент №" + (i/2).toFixed(0);
   } else {
-  	divArr[i].innerText = "Я нечетный элемент №" + (Math.round(i/2) + 1);
+  	divArr[i].innerText = "Я нечетный элемент №" + (i/2 + 1).toFixed(0);
   }
 }
